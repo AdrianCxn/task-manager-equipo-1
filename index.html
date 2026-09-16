@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task manager</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="bahreinyneto.jpeg" alt="Logo" class="logo">
+    <h1>NetoPro & Bahrein Task Manager</h1>
+    <div id="task-input-container">
+        <input type="text" class="text-input" id="task-input" placeholder="Ingrese una tarea">
+        <select id="priority-dropdown" name="priority">
+            <option value="" disabled selected>Prioridad</option>
+            <option value="Alta">Alta</option>
+            <option value="Media">Media</option>
+            <option value="Baja">Baja</option>
+        </select>
+        <input type="date" id="due-date-input" placeholder="Fecha límite">
+        <select id="state-dropdown" name="state">
+            <option value="" disabled selected>Estado</option>
+            <option value="Pendiente">Pendiente</option>
+            <option value="En Progreso">En Progreso</option>
+            <option value="Completada">Completada</option>
+        </select>
+        <button id="send-button">Agregar</button>
+    </div>
+    
+    <div id="task-list">
+        <table>
+            <thead>
+                <tr>
+                    <th>Tarea</th>
+                    <th>Prioridad</th>
+                    <th>Fecha Límite</th>
+                    <th>Estado</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody id="task-table-body">
+                <!-- Task rows will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
